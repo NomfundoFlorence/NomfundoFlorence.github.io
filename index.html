@@ -12,47 +12,37 @@
   <nav>
     <ul class="nav">
       <!-- <h3 class="welcome">Welcome!</h3> -->
-      <a href="#"> <li>About</li> </a>
-      <a href="#"> <li>Skills & Interests</li> </a>
-      <a href="#"> <li>Contacts</li>  </a>
+      <a href="#about"> <li>About</li> </a>
+      <a href="#skills-interests"> <li>Skills & Interests</li> </a>
+      <a href="#contacts"> <li>Contacts</li>  </a>
     </ul>
   </nav>
   
-  <h3>INTRODUCTION</h3>
-  <h1>Hi, I'm NOMFUNDO MLANGENI</h1>
-  <img src="image1.jpg" style="width: 300px" alt="profile photo">
-  <p>
-    I am an IT graduate and an aspiring WEB DEVELOPER.
-  </p>
-  
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a BSc in Information Technology graduate and an aspiring web developer fueled by a passion for coding.
-      I am proficient in five programming languages and I am eager to contribute to innovative projects and make my mark 
-      in the dynamic world of technology. I aim to make my aspirations a reality one line of code at a time.
-    </p>
+  <div class="intro-image">
+    <div class="intro">
+      <h3 id="about">INTRODUCTION</h3>
+      <div class="introduction">
+        <p>
+          Hi, I'm <span>NOMFUNDO MLANGENI</span>. 
+          <p>
+            I am an aspiring <span>WEB</span> & <span>SOFTWARE DEVELOPER</span>.
+          </p>
+        </p>
 
-    <h4>Education</h4>
-    <p>
-      <ul class="education">
-        <li>NWU (2021 - 2023)</li>
-        <p>BSc in Information Technology</p>
-        <li>NHS (2020)</li>
-        <P>National Senior Certificate</P>
-      </ul>
-    </p>
-
-    <div id="cv">
-      <a href="#" download="#">
-        <p>CV:</p>
-        <button>Download</button>
-      </a>
+        <h2>A little about me...</h2>
+        <p>
+          I am a BSc in Information Technology graduate and an aspiring web and software developer fueled by a passion for coding.
+          I have basic knowledge of five programming languages and proficient in one and I am eager to contribute to 
+          innovative projects and make my mark in the dynamic world of technology. I aim to make my aspirations a 
+          reality one line of code at a time.
+        </p>
+      </div>
     </div>
-  </section>
+    <img src="image1.jpg" alt="profile photo">
+  </div>
 
-  <section id="skills&interests">
-    <h2>Skills & Interests</h2>
+  <div id="skills&interests">
+    <h2 id="skills-interests">Skills & Interests</h2>
     <div id="skills">
       <ul id="backend">
         <p>BACK-END</p>
@@ -75,6 +65,15 @@
       <li>Software Development</li>
       <li>Data Science</li>
     </ul>
+  </div>
+
+  <section id="about">
+    <div id="cv">
+      <a href="#" download="#">
+        <p>CV:</p>
+        <button>Download</button>
+      </a>
+    </div>
   </section>
   
   <section id="contacts">
