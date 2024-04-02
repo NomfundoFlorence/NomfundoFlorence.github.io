@@ -15,6 +15,11 @@
       <a href="#about"> <li>About</li> </a>
       <a href="#skills-interests"> <li>Skills & Interests</li> </a>
       <a href="#contacts"> <li>Contacts</li>  </a>
+      <a href="#">
+        <button>
+          <i class="fa-solid fa-download"></i> CV
+        </button>
+      </a>
     </ul>
   </nav>
   
@@ -44,40 +49,31 @@
   <div id="skills&interests">
     <h2 id="skills-interests">Skills & Interests</h2>
     <div id="skills">
-      <ul id="backend">
-        <p>BACK-END</p>
-        <li>C#</li>
-        <li>Java</li>
-        <li>Python</li>
-      </ul>
-  
-      <ul id="frontend">
+      <ul class="frontend">
         <p>FRONT-END</p>
         <li>Javascript</li>
         <li>HTML</li>
         <li>CSS</li>
       </ul>
-    </div>
+      
+      <ul class="backend">
+        <p>BACK-END</p>
+        <li>C#</li>
+        <li>Java</li>
+        <li>Python</li>
+      </ul>
 
-    <ul id="Interests">
+    <ul class="interests">
       <p>INTERESTS</p>
       <li>Web Development</li>
       <li>Software Development</li>
       <li>Data Science</li>
     </ul>
   </div>
-
-  <section id="about">
-    <div id="cv">
-      <a href="#" download="#">
-        <p>CV:</p>
-        <button>Download</button>
-      </a>
-    </div>
-  </section>
+  </div>
   
   <section id="contacts">
-    <h2>Contacts</h2>
+    <h2>Connect</h2>
     <ul>
       <li>
         <i class="fa-solid fa-phone"></i>
@@ -85,11 +81,13 @@
       </li>
       <li>
         <i class="fa-solid fa-envelope"></i>
-        nomfundomlangeni0@gmail.com
+        <a href="mailto:nomfundomlangeni0@gmail.com" class="mail">
+          nomfundomlangeni0@gmail.com
+        </a>
       </li>
       <li>
         <i class="fa-brands fa-linkedin-in"></i>
-        https://www.linkedin.com/in/nomfundo-mlangeni-221b83227/
+        <a href="https://www.linkedin.com/in/nomfundo-mlangeni-221b83227/" class="linkedIn" target="_blank">Nomfundo Mlangeni</a>
       </li>
     </ul>
   </section>

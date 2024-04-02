@@ -1,5 +1,6 @@
 body {
   background-color: rgb(238, 238, 238);
+  font-size: 22px;
 }
 
 nav {
@@ -82,4 +83,19 @@ img {
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;
   border: 3px solid rgb(4, 0, 255);
+}
+
+#skills{
+  display: flex;
+  justify-content: space-around;
+}
+
+.frontend, .backend, .interests {
+  background-color: rgba(63, 185, 255, 0.986);
+  border: 2px solid rgb(4, 0, 255);
+}
+
+a.mail:hover, a.linkedIn:hover {
+  background-color: rgb(238, 238, 238);
+  color: rgb(4, 0, 255);
 }
