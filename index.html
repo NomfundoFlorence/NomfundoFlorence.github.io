@@ -11,12 +11,11 @@
 <body>
   <nav>
     <ul class="nav">
-      <!-- <h3 class="welcome">Welcome!</h3> -->
-      <a href="#about"> <li>About</li> </a>
-      <a href="#skills-interests"> <li>Skills & Interests</li> </a>
-      <a href="#contacts"> <li>Contacts</li>  </a>
-      <a href="#">
-        <button>
+      <a href="#about" class="navAbout"> <li>About</li> </a>
+      <a href="#skills-interests" class="navSkills"> <li>Skills & Interests</li> </a>
+      <a href="#contacts" class="navContacts"> <li>Contacts</li>  </a>
+      <a href="CV.docx" class="navCV">
+        <button class="cv">
           <i class="fa-solid fa-download"></i> CV
         </button>
       </a>
@@ -46,32 +45,51 @@
     <img src="image1.jpg" alt="profile photo">
   </div>
 
-  <div id="skills&interests">
+  <div id="skillsInterests">
     <h2 id="skills-interests">Skills & Interests</h2>
-    <div id="skills">
-      <ul class="frontend">
-        <p>FRONT-END</p>
-        <li>Javascript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-      
-      <ul class="backend">
-        <p>BACK-END</p>
-        <li>C#</li>
-        <li>Java</li>
-        <li>Python</li>
-      </ul>
 
-    <ul class="interests">
-      <p>INTERESTS</p>
-      <li>Web Development</li>
-      <li>Software Development</li>
-      <li>Data Science</li>
-    </ul>
+    <div id="skills">
+      <div class="frontend">
+        <ul class="feList">
+          <p>FRONT-END</p>
+          <hr>
+          <div class="javascript">
+            <li>Javascript</li> <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="html">
+            <li>HTML</li> <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="css">
+            <li>CSS</li> <i class="fa-brands fa-css3-alt"></i>
+          </div>
+        </ul>
+      </div>
+      
+      <div class="backend">
+        <ul class="beList">
+          <p>BACK-END</p>
+          <hr>
+          <li>C#</li>
+          <div class="java">
+            <li>Java</li> <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="python">
+            <li>Python</li> <i class="fa-brands fa-python"></i>
+          </div>
+        </ul>
+      </div>
+
+      <div class="interests">
+        <ul class="intList">
+          <p>INTERESTS</p>
+          <hr>
+          <li>Web Development</li>
+          <li>Software Development</li>
+          <li>Data Science</li>
+        </ul>
+      </div>
   </div>
-  </div>
-  
+
   <section id="contacts">
     <h2>Connect</h2>
     <ul>
@@ -91,5 +109,7 @@
       </li>
     </ul>
   </section>
+  </div>
+
 </body>
 </html>
