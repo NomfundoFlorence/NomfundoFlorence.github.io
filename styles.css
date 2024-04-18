@@ -41,7 +41,7 @@ a:link {
 a:visited {
   color: #000000;
 }
-a.navAbout:hover, a.navSkills:hover, a.navContacts:hover {
+a.navAbout:hover, a.navSkills:hover, a.navConnect:hover {
   background-color: rgba(39, 9, 211, 0.404);
   height: 25px;
   border-radius: 15px;
