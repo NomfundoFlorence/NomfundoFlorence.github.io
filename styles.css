@@ -1,7 +1,8 @@
 body {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(33, 30, 30);
   font-size: 22px;
   margin-bottom: 0;
+  color: #ffffff;
 }
 
 nav {
@@ -25,26 +26,31 @@ nav {
   border-radius: 10px;
 }
 
+li {
+  color: #000000;
+}
+
 nav ul {
   list-style-type: none;
   display: flex;
 }
-nav li, .cv {
+nav li,
+.cv {
   margin: 0px 20px 2px 20px;
   font-size: 18px;
 }
 
 a:link {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 a:visited {
-  color: #000000;
+  color: #ffffff;
 }
-a.navAbout:hover, a.navSkills:hover, a.navConnect:hover {
-  background-color: rgba(39, 9, 211, 0.404);
-  height: 25px;
-  border-radius: 15px;
+a.navAbout:hover,
+a.navSkills:hover,
+a.navConnect:hover {
+  border-bottom: 2px solid black;
   color: #ffffff;
   padding: 3px;
   margin: auto;
@@ -79,40 +85,46 @@ h3 {
   height: 35px;
 }
 img {
-  width: 350px;
+  width: 50%;
+  height: 350px;
   margin: 70px;
-  margin-left: 8%;
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-radius: 100;
-  border: 3px solid rgb(4, 0, 255);
+  margin-top: 200px;
+  border-radius: 100%;
 }
 
 #skillsInterests {
-  background-color: #ffffff;
   width: 100%;
   padding-bottom: 15px;
 }
-#skills{
+#skills {
   display: flex;
   justify-content: space-around;
 }
 
-.frontend, .backend, .interests {
+.frontend,
+.backend,
+.interests {
   border: 2px solid rgb(4, 0, 255);
   border-top-left-radius: 80px;
   border-bottom-right-radius: 80px;
   padding: 60px;
 }
-.feList, .beList, .intList {
+.feList,
+.beList,
+.intList {
   list-style: none;
   padding: 0;
 }
-.javascript, .html, .css, .java, .python {
+.javascript,
+.html,
+.css,
+.java,
+.python {
   display: flex;
 }
 
-a.mail:hover, a.linkedIn:hover {
+a.mail:hover,
+a.linkedIn:hover {
   background-color: #ffffff;
   color: rgb(4, 0, 255);
 }
@@ -120,5 +132,5 @@ a.mail:hover, a.linkedIn:hover {
 footer {
   display: flex;
   justify-content: center;
-   font-size: medium;
+  font-size: medium;
 }
