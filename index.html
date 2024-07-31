@@ -1,113 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Website</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
 
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/886e73e367.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <nav>
-    <ul class="nav">
-      <a href="#about" class="navAbout"> <li>About</li> </a>
-      <a href="#skills-interests" class="navSkills"> <li>Skills & Interests</li> </a>
-      <a href="#connect" class="navConnect"> <li>Connect</li>  </a>
-      <a href="CV.docx" class="navCV">
-        <button class="cv">
-          <i class="fa-solid fa-download"></i> CV
-        </button>
-      </a>
-    </ul>
-  </nav>
-  
-  <section class="intro-image">
-    <p>
-      Hi, I'm <span>NOMFUNDO MLANGENI</span>. 
-      <p>
-        I am an aspiring <span>WEB DEVELOPER</span>.
-      </p>
-    </p>
-    <img src="image1.jpg" alt="profile photo">
-    <h2>A little about me...</h2>
-    <p>
-      I am a BSc in Information Technology graduate and an aspiring web and software developer fueled by a passion for coding.
-      I have basic knowledge of five programming languages. I am proficient in one and eager to contribute to 
-      innovative projects and make my mark in the dynamic world of technology. I aim to make my aspirations a 
-      reality one line of code at a time.
-    </p>
-  </section>
-
-  <div id="skillsInterests">
-    <h2 id="skills-interests">Skills & Interests</h2>
-
-    <div id="skills">
-      <div class="frontend">
-        <ul class="feList">
-          <p>FRONT-END</p>
-          <hr>
-          <div class="javascript">
-            <li>Javascript</li> <i class="fa-brands fa-js"></i>
-          </div>
-          <div class="html">
-            <li>HTML</li> <i class="fa-brands fa-html5"></i>
-          </div>
-          <div class="css">
-            <li>CSS</li> <i class="fa-brands fa-css3-alt"></i>
-          </div>
-        </ul>
-      </div>
-      
-      <div class="backend">
-        <ul class="beList">
-          <p>BACK-END</p>
-          <hr>
-          <div class="python">
-            <li>Python</li> <i class="fa-brands fa-python"></i>
-          </div>
-          <div class="java">
-            <li>Java</li> <i class="fa-brands fa-java"></i>
-          </div>
-          <li>C#</li>
-        </ul>
-      </div>
-
-      <div class="interests">
-        <ul class="intList">
-          <p>INTERESTS</p>
-          <hr>
-          <li>Web Development</li>
-          <li>Software Development</li>
-          <li>Data Science</li>
-        </ul>
-      </div>
-  </div>
-
-  <section id="connect">
-    <h2>Connect</h2>
-    <ul>
-      <li>
-        <i class="fa-solid fa-phone"></i>
-        078 746 0853
-      </li>
-      <li>
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:nomfundomlangeni0@gmail.com" class="mail">
-          nomfundomlangeni0@gmail.com
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/886e73e367.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <a href="#about" class="navAbout"> <li>About</li> </a>
+        <a href="#skills-interests" class="navSkills">
+          <li>Skills & Interests</li>
         </a>
-      </li>
-      <li>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <a href="https://www.linkedin.com/in/nomfundo-mlangeni-221b83227/" class="linkedIn" target="_blank">Nomfundo Mlangeni</a>
-      </li>
-    </ul>
-  </section>
-<hr>
-  <footer>
-    <p>© copyright 2024 - Nomfundo Mlangeni.</p>
-  </footer>
-  </div>
+        <a href="#connect" class="navConnect"> <li>Connect</li> </a>
+        <a href="CV.docx" class="navCV">
+          <button class="cv"><i class="fa-solid fa-download"></i> CV</button>
+        </a>
+      </ul>
+    </nav>
 
-</body>
+    <section class="intro-image">
+      <div class="intro-name">
+        <p class="intro">
+          Hi, I am <span class="name">NOMFUNDO MLANGENI</span>
+          <span> an aspiring <span class="dev">WEB DEVELOPER </span></span>
+        </p>
+        <div class="image">
+          <img src="image1.jpg" alt="profile photo" />
+        </div>
+      </div>
+      <div class="about-me">
+        <h2>A little about me...</h2>
+        <p class="about-me-para">
+          I am a BSc in Information Technology graduate and an aspiring web and
+          software developer fueled by a passion for coding. I have basic
+          knowledge of five programming languages. I am proficient in one and
+          eager to contribute to innovative projects and make my mark in the
+          dynamic world of technology. I aim to make my aspirations a reality
+          one line of code at a time.
+        </p>
+      </div>
+    </section>
+
+    <div id="skillsInterests">
+      <h2 id="skills-interests">Skills & Interests</h2>
+
+      <div class="skills">
+        <div class="frontend">
+          <ul class="feList">
+            <p>FRONT-END</p>
+            <hr />
+            <div class="javascript">
+              <li>Javascript</li>
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="html">
+              <li>HTML</li>
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="css">
+              <li>CSS</li>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+          </ul>
+        </div>
+
+        <div class="backend">
+          <ul class="beList">
+            <p>BACK-END</p>
+            <hr />
+            <div class="python">
+              <li>Python</li>
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="java">
+              <li>Java</li>
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <li>C#</li>
+          </ul>
+        </div>
+
+        <div class="interests">
+          <ul class="intList">
+            <p>INTERESTS</p>
+            <hr />
+            <li>Web Development</li>
+            <li>Software Development</li>
+            <li>Data Science</li>
+          </ul>
+        </div>
+      </div>
+
+      <section id="connect">
+        <h2>Connect</h2>
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            078 746 0853
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:nomfundomlangeni0@gmail.com" class="mail">
+              nomfundomlangeni0@gmail.com
+            </a>
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <a
+              href="https://www.linkedin.com/in/nomfundo-mlangeni-221b83227/"
+              class="linkedIn"
+              target="_blank"
+              >Nomfundo Mlangeni</a
+            >
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <footer>
+        <p>© copyright 2024 - Nomfundo Mlangeni.</p>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -35,7 +35,7 @@ nav ul {
   list-style-type: none;
   display: flex;
 }
-nav li,
+nav ul li,
 .cv {
   margin: 0px 20px 2px 20px;
   font-size: 18px;
@@ -60,56 +60,62 @@ a:active {
   color: #000000;
 }
 
+h2 {
+  text-align: center;
+}
 .intro-image {
   padding-top: 57px;
   display: grid;
   grid-template-columns: auto;
 }
-/* .intro { */
-/* display: grid; */
-/* grid-template-columns: 1fr 1fr; */
-/* justify-content: center; */
-/* } */
-/* .introduction {
-  margin: 0;
-  font-size: 22px;
-  line-height: 1.7;
-} */
-/* #about {
-  margin-top: 80px;
+
+/* @media (min-width: 768px) {
+  .intro-image {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
 } */
 
-span {
+.intro {
+  text-align: center;
+}
+
+.name,
+.dev {
+  display: block;
   color: rgb(65, 187, 243);
   font-size: 30px;
 }
-/* h3 {
-  font-size: 30px;
-  border-bottom: 3px dashed rgb(4, 0, 255);
-  height: 35px;
-} */
 
 img {
-  width: 450px;
-  height: 450px;
-  /* margin: 70px; */
-  /* margin-top: 200px; */
-  /* border-radius: 100%; */
+  width: 300px;
+  height: 300px;
+}
+
+.image {
+  text-align: center;
+}
+
+.about-me {
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #skillsInterests {
-  width: 100%;
   padding-bottom: 15px;
 }
-#skills {
+.skills {
   display: grid;
+  grid-template-columns: auto;
   justify-content: space-around;
 }
 
 .frontend,
 .backend,
 .interests {
-  border: 2px solid rgb(4, 0, 255);
+  border: 2px solid rgb(65, 187, 243);
   border-top-left-radius: 80px;
   border-bottom-right-radius: 80px;
   padding: 60px;
@@ -131,12 +137,22 @@ img {
 
 a.mail:hover,
 a.linkedIn:hover {
-  background-color: #ffffff;
-  color: rgb(4, 0, 255);
+  color: rgb(65, 187, 243);
 }
 
 footer {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-size: medium;
+}
+
+@media (min-width: 768px) {
+  .intro-image {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-evenly;
+  }
 }
