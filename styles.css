@@ -20,10 +20,10 @@ nav {
 .cv {
   height: 30px;
   width: 100px;
-  color: #ffffff;
-  background-color: rgb(60, 57, 255);
-  border: none;
-  padding: 5px 8px 5px 8px;
+  /* color: #ffffff; */
+  /* background-color: rgb(60, 57, 255); */
+  border: 1.5px solid navy;
+  /* padding: 5px 8px 5px 8px; */
   border-radius: 10px;
 }
 
