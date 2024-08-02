@@ -47,7 +47,7 @@ a:visited {
 }
 a.navAbout:hover,
 a.navSkills:hover,
-a.navConnect:hover {
+a.navContact:hover {
   border-bottom: 2px solid black;
   color: #ffffff;
   padding: 3px;
@@ -133,6 +133,10 @@ img {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+}
+
+#phoneNumber {
+  cursor: pointer;
 }
 
 .linkedIn,
