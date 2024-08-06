@@ -1,58 +1,68 @@
 body {
   background-color: rgb(33, 30, 30);
   font-size: 22px;
-  margin-bottom: 0;
   color: #ffffff;
+}
+
+.content {
+  margin-top: 120px;
 }
 
 nav {
   background-color: rgb(65, 187, 243);
   display: flex;
-  justify-content: right;
+  justify-content: center;
   width: 100%;
-  height: 57px;
+  height: 120px;
   position: fixed;
   overflow: hidden;
   top: 0;
   left: 0;
+  box-sizing: border-box;
 }
 
 .cv {
   height: 30px;
   width: 100px;
-  /* color: #ffffff; */
-  /* background-color: rgb(60, 57, 255); */
   border: 1.5px solid navy;
-  /* padding: 5px 8px 5px 8px; */
   border-radius: 10px;
 }
 
 nav ul {
+  font-size: 20px;
   list-style-type: none;
-  display: flex;
+  display: block;
+  text-align: center;
+  margin: 6px;
 }
-nav ul li,
-.cv {
-  margin: 0px 20px 2px 20px;
+
+.navCV {
+  background-color: rgb(25, 25, 112);
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+nav ul li {
+  margin: 0px 20px 5px 20px;
+  padding: px;
   color: #000000;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+nav ul li:hover {
+  color: #ffffff;
+  font-size: 20px;
 }
 
 a:link {
   color: #ffffff;
   text-decoration: none;
 }
+
 a:visited {
   color: #ffffff;
 }
-a.navAbout:hover,
-a.navSkills:hover,
-a.navContact:hover {
-  border-bottom: 2px solid black;
-  color: #ffffff;
-  padding: 3px;
-  margin: auto;
-}
+
 a:active {
   color: #000000;
 }
@@ -60,8 +70,9 @@ a:active {
 h2 {
   text-align: center;
 }
-.intro-image {
-  padding-top: 57px;
+
+#intro-image {
+  /* padding-top: 115px; */
   display: grid;
   grid-template-columns: auto;
 }
@@ -89,7 +100,6 @@ img {
 
 .about-me {
   display: grid;
-  /* grid-column: 2 / 3; */
   width: 50%;
   margin: 0 auto;
   text-align: center;
@@ -145,6 +155,10 @@ img {
   display: none;
 }
 
+.fa-phone:hover {
+  color: rgb(65, 187, 243);
+}
+
 a.icon-email:hover,
 a.icon-linkedIn:hover {
   color: rgb(65, 187, 243);
@@ -156,13 +170,72 @@ footer {
 }
 
 @media (min-width: 1023px) {
-  .intro-image {
+  #intro-image {
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
   }
 }
 
 @media (min-width: 768px) {
+  .content {
+    margin-top: 57px;
+  }
+
+  nav {
+    background-color: rgb(65, 187, 243);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 57px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .navCV {
+    background-color: rgb(25, 25, 112);
+    height: 25px;
+    width: 95px;
+    border-radius: 10px;
+    margin-top: 9.5px;
+    padding-top: 9px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+  }
+
+  nav ul li {
+    padding-top: 20px;
+    margin: 0px 20px 2px 20px;
+    color: #000000;
+    font-size: 20px;
+  }
+
+  a:link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #ffffff;
+  }
+  nav ul li:hover {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  img {
+    width: 400px;
+    height: 350px;
+  }
+
+  .fa-phone:hover {
+    color: rgb(65, 187, 243);
+  }
+
   .skills {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column: 2 / 3;
