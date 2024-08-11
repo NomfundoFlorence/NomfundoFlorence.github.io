@@ -10,22 +10,27 @@
       src="https://kit.fontawesome.com/886e73e367.js"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
   </head>
   <body>
-    <nav>
-      <ul class="nav">
+    <nav class="navbar">
+      <div class="burger-menu" id="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#intro-image" class="navAbout">About</a></li>
         <li>
-          <a href="#skillsInterests" class="navSkills"> Skills/Interests</a>
+          <a href="#skillsInterests" class="navSkills"> Skills & Interests</a>
+        </li>
+        <li>
+          <a href="#projects" class="navProjects"> Projects</a>
         </li>
         <li><a href="#contact" class="navContact">Contact</a></li>
-        <li>
-          <a href="./resources/CV.pdf" class="navCV">
-            <i class="fa-solid fa-circle-arrow-down"></i> CV
-          </a>
-        </li>
       </ul>
+      <a href="./resources/CV.pdf" class="navCV">
+        <i class="fa-solid fa-circle-arrow-down"></i> CV
+      </a>
     </nav>
 
     <div class="content">
@@ -54,7 +59,6 @@
 
       <div id="skillsInterests">
         <h2 id="skills-interests">Skills & Interests</h2>
-
         <div class="skills">
           <div class="frontend">
             <ul class="feList">
@@ -95,6 +99,11 @@
           </div>
         </div>
 
+        <section id="projects">
+          <h2>Projects</h2>
+          <p class="projects">Coming soon...</p>
+        </section>
+
         <section id="contact">
           <h2>Contact</h2>
           <ul class="contactDetails">
@@ -126,5 +135,6 @@
         </footer>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
